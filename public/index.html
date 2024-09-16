@@ -49,7 +49,6 @@
       async function loadUsers() {
         const response = await fetch("/users");
         const users = await response.json();
-
         const usersList = document.getElementById("users");
         usersList.innerHTML = "";
         users.forEach((user) => {
